@@ -1,0 +1,154 @@
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.animate-text {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 2.0s steps(40, end), blink .75s step-end infinite;
+    border-right: 3px solid var(--accent-green);
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.fade-in {
+    animation: fadeIn 1s ease forwards;
+}
+
+.float {
+    animation: float 3s ease-in-out infinite;
+}
+
+.delay-1 {
+    animation-delay: 0.2s;
+}
+
+.delay-2 {
+    animation-delay: 0.4s;
+}
+
+.delay-3 {
+    animation-delay: 0.6s;
+}
+
+.delay-4 {
+    animation-delay: 0.8s;
+}
+
+/* Scroll Animation */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Hover Effects */
+.hover-glow {
+    transition: var(--transition);
+}
+
+.hover-glow:hover {
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+}
+
+/* Code block animation */
+.code-block {
+    position: relative;
+    overflow: hidden;
+}
+
+.code-block::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        to bottom right,
+        rgba(0, 255, 136, 0.1) 0%,
+        transparent 50%,
+        rgba(0, 255, 136, 0.05) 100%
+    );
+    animation: rotate 20s linear infinite;
+    z-index: 0;
+}
+
+.code-block pre {
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Pulse animation for CTA */
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 255, 136, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(0, 255, 136, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 255, 136, 0);
+    }
+}

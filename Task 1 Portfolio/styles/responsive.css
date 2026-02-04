@@ -1,0 +1,120 @@
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .hero .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-buttons {
+        justify-content: center;
+    }
+    
+    .about-content,
+    .education-content,
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .section-title {
+        font-size: 2.2rem;
+    }
+    
+    .hero-title {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: var(--primary-black);
+        flex-direction: column;
+        padding: 30px;
+        gap: 25px;
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: var(--transition);
+        border-bottom: 1px solid rgba(0, 255, 136, 0.1);
+    }
+    
+    .nav-links.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .menu-toggle {
+        display: block;
+    }
+    
+    .about-stats {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .section {
+        padding: 60px 0;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .footer-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn {
+        width: 100%;
+        max-width: 250px;
+        text-align: center;
+    }
+    
+    .code-block {
+        padding: 20px;
+    }
+    
+    .code-block code {
+        font-size: 0.9rem;
+    }
+    
+    .project-card,
+    .skill-category,
+    .stat-card,
+    .education-card,
+    .achievements {
+        padding: 20px;
+    }
+    
+    .hero {
+        padding-top: 120px;
+        padding-bottom: 80px;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+}

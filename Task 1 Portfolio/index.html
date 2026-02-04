@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tejas Kasbekar | Full-Stack Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <!-- EmailJS Script -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#home" class="logo">Tejas<span class="green-text">Kasbekar</span></a>
+            <div class="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="assets/Tejas_Kasbekar_Resume.pdf" class="download-btn" download>
+                    <i class="fas fa-download"></i> Resume
+                </a>
+            </div>
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title animate-text">
+                    TEJAS <span class="green-text">KASBEKAR</span>
+                </h1>
+                <h2 class="hero-subtitle">
+                    Full-Stack Developer • MERN Stack • Backend Engineer
+                </h2>
+                <p class="hero-description">
+                    Building scalable web applications with efficient backend architecture and clean modular code. 
+                    Expanding expertise in AI/ML and Cybersecurity.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary-btn">View Projects</a>
+                    <a href="#contact" class="btn outline-btn">Contact Me</a>
+                    <a href="assets/Tejas_Kasbekar_Resume.pdf" class="btn download-btn-hero" download>
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="code-block">
+                    <pre><code class="green-text">// Passionate Developer
+const tejas = {
+    role: "Full-Stack Developer",
+    stack: ["MERN", "Node.js", "React"],
+    focus: "Scalable Applications",
+    mindset: "Be the best at everything"
+};</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">About <span class="green-text">Me</span></h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a passionate Full-Stack (MERN) developer skilled in building scalable web applications, 
+                        efficient backend architecture, and writing clean modular code. 
+                    </p>
+                    <p>
+                        With experience in Node.js, Express.js, React, JavaScript, Redux, MongoDB, and MySQL, 
+                        I focus on creating robust systems that follow industry standards.
+                    </p>
+                    <p>
+                        Currently expanding my expertise in AI/ML and Cybersecurity while continuously improving 
+                        my full-stack development skills.
+                    </p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt green-text"></i>
+                            <span>Pune, India</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone green-text"></i>
+                            <span>+91 9112066073</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope green-text"></i>
+                            <span>tejas31441@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <h3 class="stat-number">5+</h3>
+                        <p class="stat-text">Projects Completed</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 class="stat-number">2</h3>
+                        <p class="stat-text">Leadership Roles</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 class="stat-number">300+</h3>
+                        <p class="stat-text">Participants Managed</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 class="stat-number">∞</h3>
+                        <p class="stat-text">Passion for Coding</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2 class="section-title">Technical <span class="green-text">Skills</span></h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <i class="fas fa-code green-text"></i> Frontend
+                    </h3>
+                    <ul class="skill-list">
+                        <li>HTML5, CSS3, JavaScript (ES6+)</li>
+                        <li>React.js (Hooks, State Management, Redux)</li>
+                        <li>GSAP animations, responsive UI</li>
+                        <li>Accessibility principles</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <i class="fas fa-server green-text"></i> Backend
+                    </h3>
+                    <ul class="skill-list">
+                        <li>Node.js, Express.js</li>
+                        <li>REST APIs, MVC architecture</li>
+                        <li>JWT authentication, sessions</li>
+                        <li>Secure API design & error handling</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <i class="fas fa-database green-text"></i> Database
+                    </h3>
+                    <ul class="skill-list">
+                        <li>MongoDB – Queries, Aggregation, Indexing</li>
+                        <li>MySQL – schema design, CRUD, queries</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">
+                        <i class="fas fa-tools green-text"></i> Tools & More
+                    </h3>
+                    <ul class="skill-list">
+                        <li>Git & GitHub (conducted seminars)</li>
+                        <li>Postman, VS Code, NPM</li>
+                        <li>AI/ML foundations, Cybersecurity basics</li>
+                        <li>Strong DSA foundation in C++</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2 class="section-title">My <span class="green-text">Projects</span></h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3 class="project-title">University Banking System</h3>
+                    <p class="project-description">
+                        Full banking platform with JWT authentication, sessions, and MongoDB integration.
+                        Features modular backend structure and responsive UI.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Express</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">JWT</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3 class="project-title">Maharashtra Police Crime Records System</h3>
+                    <p class="project-description">
+                        Secure CRUD system with admin JWT login and dynamic database updates with validations.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">JWT</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3 class="project-title">QuickCoupon – Coupon & Cashback Finder</h3>
+                    <p class="project-description">
+                        WhatsApp API auto-message generation with unique coupon codes for each shopkeeper.
+                        Dynamic updates for offers and deals.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">WhatsApp API</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3 class="project-title">Smart Menu Card Website</h3>
+                    <p class="project-description">
+                        Digital menu system for restaurants with real-time updates and responsive design.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">WebSockets</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Achievements -->
+    <section id="education" class="section education">
+        <div class="container">
+            <h2 class="section-title">Education & <span class="green-text">Achievements</span></h2>
+            <div class="education-content">
+                <div class="education-card">
+                    <h3 class="education-title">
+                        <i class="fas fa-graduation-cap green-text"></i> 
+                        Bachelor of Engineering — Computer Engineering
+                    </h3>
+                    <p class="education-institution">
+                        Trinity Academy of Engineering, Savitribai Phule Pune University (SPPU)
+                    </p>
+                    <p class="education-duration">Currently in Semester 5</p>
+                </div>
+                <div class="achievements">
+                    <h3 class="achievements-title">Leadership & Achievements</h3>
+                    <ul class="achievements-list">
+                        <li>
+                            <i class="fas fa-trophy green-text"></i>
+                            Lead for Computer Department at inter-college event; managed 300+ participants
+                        </li>
+                        <li>
+                            <i class="fas fa-user-tie green-text"></i>
+                            Current Vice President of the Computer Department
+                        </li>
+                        <li>
+                            <i class="fas fa-gamepad green-text"></i>
+                            Hosted 40-team Valorant Esports Tournament
+                        </li>
+                        <li>
+                            <i class="fas fa-chalkboard-teacher green-text"></i>
+                            Delivered seminar on Version Control (Git & GitHub)
+                        </li>
+                        <li>
+                            <i class="fas fa-brain green-text"></i>
+                            Preparing seminar on Brain–Computer Interfaces
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">Get In <span class="green-text">Touch</span></h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 class="contact-subtitle">Let's Connect!</h3>
+                    <p>
+                        I'm always open to discussing new opportunities, interesting projects, 
+                        or just chatting about technology.
+                    </p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope green-text"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>tejas31441@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-phone green-text"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+91 9112066073</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-map-marker-alt green-text"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Pune, India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <h3 class="contact-subtitle">Send Me a Message</h3>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" required placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn form-submit">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                        <div id="formMessage" class="form-message"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="#home" class="footer-logo">Tejas<span class="green-text">Kasbekar</span></a>
+                <p class="footer-text">
+                    Full-Stack Developer • MERN Stack • AI & Cybersecurity Enthusiast
+                </p>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                    <a href="assets/Tejas_Kasbekar_Resume.pdf" download>Resume</a>
+                </div>
+                <p class="copyright">
+                    &copy; 2023 Tejas Kasbekar. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Debug Message Viewer (Remove in production) -->
+    <div id="messageViewer" style="display: none; position: fixed; bottom: 20px; right: 20px; background: #121212; padding: 20px; border: 2px solid #00ff88; border-radius: 10px; z-index: 9999; max-width: 300px; max-height: 400px; overflow-y: auto; box-shadow: 0 5px 15px rgba(0,0,0,0.5);">
+        <h3 style="color: #00ff88; margin-bottom: 10px; border-bottom: 1px solid #00ff88; padding-bottom: 5px;">📬 Stored Messages</h3>
+        <div id="messageList" style="margin-bottom: 15px;"></div>
+        <div style="display: flex; gap: 10px;">
+            <button onclick="toggleMessageViewer()" style="background: #444; color: white; border: none; padding: 8px 15px; border-radius: 5px; cursor: pointer; flex: 1;">Hide</button>
+            <button onclick="clearMessages()" style="background: #ff3333; color: white; border: none; padding: 8px 15px; border-radius: 5px; cursor: pointer; flex: 1;">Clear All</button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/form-handler.js"></script>
+    
+    <!-- Debug Script (Remove in production) -->
+    <script>
+    // Debug functions to view messages
+    function toggleMessageViewer() {
+        const viewer = document.getElementById('messageViewer');
+        viewer.style.display = viewer.style.display === 'none' ? 'block' : 'none';
+        if (viewer.style.display === 'block') {
+            loadMessages();
+        }
+    }
+
+    function loadMessages() {
+        const messages = JSON.parse(localStorage.getItem('contactMessages') || '[]');
+        const messageList = document.getElementById('messageList');
+        messageList.innerHTML = '';
+        
+        if (messages.length === 0) {
+            messageList.innerHTML = '<p style="color: #888; text-align: center; padding: 20px;">No messages stored</p>';
+            return;
+        }
+        
+        messages.forEach((msg, index) => {
+            const msgDiv = document.createElement('div');
+            msgDiv.style.borderBottom = '1px solid #333';
+            msgDiv.style.padding = '10px 0';
+            msgDiv.style.marginBottom = '10px';
+            msgDiv.innerHTML = `
+                <div style="display: flex; justify-content: space-between; align-items: start;">
+                    <p style="margin: 0; color: #00ff88; font-weight: bold;">${msg.name}</p>
+                    <small style="color: #888; font-size: 10px;">${msg.read ? '✓ Read' : '🆕 New'}</small>
+                </div>
+                <p style="margin: 5px 0 0 0; color: white; font-size: 13px;"><strong>${msg.subject}</strong></p>
+                <p style="margin: 5px 0; color: #ccc; font-size: 12px;">${msg.message.substring(0, 80)}${msg.message.length > 80 ? '...' : ''}</p>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <small style="color: #888; font-size: 10px;">${new Date(msg.timestamp).toLocaleString()}</small>
+                    <small style="color: #00ff88; font-size: 10px; cursor: pointer;" onclick="viewFullMessage(${index})">View</small>
+                </div>
+            `;
+            messageList.appendChild(msgDiv);
+        });
+    }
+
+    function viewFullMessage(index) {
+        const messages = JSON.parse(localStorage.getItem('contactMessages') || '[]');
+        if (messages[index]) {
+            const msg = messages[index];
+            alert(`📧 Full Message\n\nFrom: ${msg.name} (${msg.email})\nSubject: ${msg.subject}\nTime: ${new Date(msg.timestamp).toLocaleString()}\n\nMessage:\n${msg.message}`);
+            
+            // Mark as read
+            messages[index].read = true;
+            localStorage.setItem('contactMessages', JSON.stringify(messages));
+            loadMessages();
+        }
+    }
+
+    function clearMessages() {
+        if (confirm('Delete all stored messages? This cannot be undone.')) {
+            localStorage.removeItem('contactMessages');
+            loadMessages();
+            console.log('🗑️ All messages cleared');
+        }
+    }
+
+    // Show in console on load
+    setTimeout(() => {
+        const messages = JSON.parse(localStorage.getItem('contactMessages') || '[]');
+        console.log('📊 Contact messages in localStorage:', messages.length);
+        if (messages.length > 0) {
+            console.log('👁️ Press Ctrl+Shift+M to view messages');
+            console.log('🧹 Run clearMessages() to delete all');
+            
+            // Auto-show if there are unread messages
+            const unreadMessages = messages.filter(msg => !msg.read);
+            if (unreadMessages.length > 0) {
+                console.log(`🆕 You have ${unreadMessages.length} unread messages`);
+            }
+        }
+    }, 1000);
+
+    // Add keyboard shortcut (Ctrl+Shift+M) to toggle message viewer
+    document.addEventListener('keydown', function(e) {
+        if (e.ctrlKey && e.shiftKey && e.key === 'M') {
+            e.preventDefault();
+            toggleMessageViewer();
+        }
+    });
+
+    // Notification permission helper
+    if ("Notification" in window && Notification.permission === "default") {
+        setTimeout(() => {
+            const askPermission = confirm("Allow notifications for new messages?");
+            if (askPermission) {
+                Notification.requestPermission().then(permission => {
+                    if (permission === "granted") {
+                        console.log("✅ Notification permission granted");
+                    }
+                });
+            }
+        }, 3000);
+    }
+    </script>
+</body>
+</html>
